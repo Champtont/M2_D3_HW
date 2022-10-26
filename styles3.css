@@ -26,6 +26,7 @@ footer {
 #two {
   flex-grow: 9;
   display: flex;
+  position: relative;
 }
 #nav {
   background-color: #c22177;
@@ -46,4 +47,30 @@ footer {
 }
 footer {
   height: 10%;
+}
+/*responsiveness*/
+@media screen and (max-width: 975px) {
+  #nav {
+    position: absolute;
+    top: 0;
+    width: 95%;
+  }
+  #aside {
+    padding-top: 3.5em;
+  }
+  #article {
+    padding-top: 3.5em;
+  }
+}
+/*More responsiveness!!!!*/
+@media screen and (max-width: 700px) {
+  #two {
+    flex-direction: column;
+  }
+  #article {
+    flex-grow: 9;
+  }
+  #aside {
+    padding-top: 1em;
+  }
 }
